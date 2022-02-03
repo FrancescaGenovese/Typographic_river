@@ -130,6 +130,14 @@
         .Change_width_3{
             width: 100% !important;
         }
+	
+	.Change_width_4{
+            width: 37% !important;
+        }
+
+        .Change_width_5{
+            width: 40% !important;
+        }
 
         .Change_font_size_1{
             font-size: 15px;
@@ -186,8 +194,8 @@
                     <div class="dropdown">
                             <button onclick="open_dropdown('myDropdown')" id="first_drop" class="dropbtn">Change the width ▼</button>
                             <div id="myDropdown" class="dropdown-content">
-                                <button class="b" onclick="ChangeWidth_1('example_1')">50%</button>
-                                <button class="b" onclick="ChangeWidth_2('example_1')">80%</button>
+                                <button class="b" onclick="ChangeWidth_1('example_1')">30%</button>
+                                <button class="b" onclick="ChangeWidth_2('example_1')">35%</button>
                                 <button class="b" onclick="ChangeWidth_3('example_1')">100%</button>
                             </div>
                     </div>
@@ -322,8 +330,8 @@
             <div class="dropdown">
                     <button onclick="open_dropdown('myDropdown_8')" id="first_drop" class="dropbtn">Change the width ˇ</button>
                     <div id="myDropdown_8" class="dropdown-content">
-                        <button class="b" onclick="ChangeWidth_1('example_3')">50%</button>
-                        <button class="b" onclick="ChangeWidth_2('example_3')">80%</button>
+                        <button class="b" onclick="ChangeWidth_4('example_3')">37%</button>
+                        <button class="b" onclick="ChangeWidth_5('example_3')">40%</button>
                         <button class="b" onclick="ChangeWidth_3('example_3')">100%</button>
                     </div>
             </div>
@@ -388,8 +396,8 @@
             <div class="dropdown">
                     <button onclick="open_dropdown('myDropdown_12')" id="first_drop" class="dropbtn">Change the width ˇ</button>
                     <div id="myDropdown_12" class="dropdown-content">
-                        <button class="b" onclick="ChangeWidth_1('example_4')">50%</button>
-                        <button class="b" onclick="ChangeWidth_2('example_4')">80%</button>
+                        <button class="b" onclick="ChangeWidth_1('example_4')">30%</button>
+                        <button class="b" onclick="ChangeWidth_2('example_4')">35%</button>
                         <button class="b" onclick="ChangeWidth_3('example_4')">100%</button>
                     </div>
             </div>
@@ -453,8 +461,8 @@
             <div class="dropdown">
                     <button onclick="open_dropdown('myDropdown_16')" id="first_drop" class="dropbtn">Change the width ˇ</button>
                     <div id="myDropdown_16" class="dropdown-content">
-                        <button class="b" onclick="ChangeWidth_1('example_5')">50%</button>
-                        <button class="b" onclick="ChangeWidth_2('example_5')">80%</button>
+                        <button class="b" onclick="ChangeWidth_2('example_5')">35%</button>
+                        <button class="b" onclick="ChangeWidth_5('example_5')">40%</button>
                         <button class="b" onclick="ChangeWidth_3('example_5')">100%</button>
                     </div>
             </div>
@@ -518,8 +526,8 @@
             <div class="dropdown">
                     <button onclick="open_dropdown('myDropdown_20')" id="first_drop" class="dropbtn">Change the width ˇ</button>
                     <div id="myDropdown_20" class="dropdown-content">
-                        <button class="b" onclick="ChangeWidth_1('example_6')">50%</button>
-                        <button class="b" onclick="ChangeWidth_2('example_6')">80%</button>
+                        <button class="b" onclick="ChangeWidth_1('example_6')">30%</button>
+                        <button class="b" onclick="ChangeWidth_2('example_6')">35%</button>
                         <button class="b" onclick="ChangeWidth_3('example_6')">100%</button>
                     </div>
             </div>
@@ -583,8 +591,8 @@
             <div class="dropdown">
                     <button onclick="open_dropdown('myDropdown_24')" id="first_drop" class="dropbtn">Change the width ˇ</button>
                     <div id="myDropdown_24" class="dropdown-content">
-                        <button class="b" onclick="ChangeWidth_1('example_7')">50%</button>
-                        <button class="b" onclick="ChangeWidth_2('example_7')">80%</button>
+                        <button class="b" onclick="ChangeWidth_1('example_7')">30%</button>
+                        <button class="b" onclick="ChangeWidth_2('example_7')">35%</button>
                         <button class="b" onclick="ChangeWidth_3('example_7')">100%</button>
                     </div>
             </div>
@@ -654,6 +662,16 @@
             function ChangeWidth_3(id) {
                var element = document.getElementById(id);
                element.classList.toggle("Change_width_3");
+            }
+	
+		function ChangeWidth_4(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_width_4");
+            }
+
+            function ChangeWidth_5(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_width_5");
             }
 
             function ChangeFont_size_1(id) {
