@@ -1,0 +1,186 @@
+
+        @font-face {
+            font-family: "MonoSpace_serif";
+            src: url(Font/Flexi_IBM_VGA_True.ttf);
+        }
+
+        /*---------------------------------------dropdown------------------------------------------*/
+
+        .dropdown{
+            margin: 1%;
+
+        }
+
+        .dropbtn {
+            font-family: "MonoSpace_serif";
+            /*background-color: grey;
+            border-radius: 10%;
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;*/
+            background-color: white; /* Green */
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border: 2px solid #008CBA;
+            
+        }
+
+        .dropbtn:hover{
+            background-color: #008CBA;
+            color: white;
+        }
+       
+
+        .j{
+            border: none;
+            padding: 16px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 8%;
+            font-family: "MonoSpace_serif";
+            background-color: #008CBA;
+            color:black;
+            
+        }
+
+        
+        .dropdown-content {
+            display: none;
+            background-color: #f1f1f1;
+            padding: 5px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 100;
+        
+        }
+
+        .dropdown-content button {
+            display: block;
+            margin: auto;
+            margin-bottom: 1%;
+            width: 90%;
+            
+        }
+        
+        
+        .show {display: block;}
+
+        /*-----------------------------------------------------fine dropdown---------------------------------------*/
+
+        .commands{
+            display: flex;
+            width: 80%;
+            height: 23vh;
+            padding: 15px;
+            background-image: linear-gradient(to bottom right, rgba(255,0,0,0), rgb(136, 215, 252));
+            border: 1px solid black;
+        }
+
+        .b{
+            background-color: white;
+            color: #008CBA;
+            padding: 5px;
+            font-size: 14px;
+            border-radius: 5%;
+            border: none;
+            cursor: pointer;
+            margin: 1%;
+        }
+     
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+  
+        }
+
+        .grid-item {
+            text-align: center;
+        }
+
+        
+
+        .Change_width_1{
+            width: 30% !important;
+        }
+
+        .Change_width_2{
+            width: 35% !important;
+        }
+
+        .Change_width_3{
+            width: 100% !important;
+        }
+
+        .Change_width_4{
+            width: 37% !important;
+        }
+
+        .Change_width_5{
+            width: 40% !important;
+        }
+
+        .Change_width_6{
+            width: 32% !important;
+        }
+
+        .Change_font_size_1{
+            font-size: 15px;
+        }
+
+        .Change_font_size_2{
+            font-size: 19px;
+        }
+
+        .Change_font_size_3{
+            font-size: 22px;
+        }
+
+        .Change_font_type_1{
+            font-family: "Times New Roman, Times, serif" !important;
+            
+        }
+
+        .Change_font_type_2{
+            font-family: "MonoSpace_serif"!important;
+            
+        }
+
+        .not_justify{
+            text-align: left !important;
+        }
+
+        .line_height_1{
+            line-height: 1.5;
+        }
+
+        .line_height_2{
+            line-height: 1.6;
+        }
+
+        .line_height_3{
+            line-height: 1.8;
+        }
+
+        .letter_spacing_1{
+            letter-spacing: -0.5px;
+        }
+
+        .letter_spacing_2{
+            letter-spacing: -1px;
+        }
+
+        body{
+            margin:0;
+            /* padding: 10px; */
+        }
