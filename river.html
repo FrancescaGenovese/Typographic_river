@@ -1,0 +1,850 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css_river.css">
+    </head>
+
+    <body>
+        <div id="loading" style="display: none;">
+            <img src="loading.gif" style="margin-top: 40vh;" alt="Girl in a jacket" width="100" height="100">
+        </div>
+        <div id="container_all">
+                <div class="commands">
+                    <div class="dropdown">
+                            <button onclick="open_dropdown('myDropdown')" id="first_drop" class="dropbtn">Change the width ▼</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <button class="b" onclick="ChangeWidth_1('example_1')">320px</button>
+                                <button class="b" onclick="ChangeWidth_2('example_1')">600px</button>
+                                <button class="b" onclick="ChangeWidth_3('example_1')">100%</button>
+                            </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button onclick="open_dropdown('myDropdown_1')" id="second_drop" class="dropbtn">Change font size ▼</button>
+                        <div id="myDropdown_1" class="dropdown-content">
+                            <button class="b" onclick="ChangeFont_size_1('example_1')">11pt</button>
+                            <button class="b" onclick="ChangeFont_size_2('example_1')">14pt</button>
+                            <button class="b" onclick="ChangeFont_size_3('example_1')">16pt</button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button onclick="open_dropdown('myDropdown_2')" id="th_drop" class="dropbtn">Change font type ▼</button>
+                        <div id="myDropdown_2" class="dropdown-content">
+                            <button class="b" onclick="ChangeFont_type_1('example_1')">Times New Roman</button>
+                            <button class="b" onclick="ChangeFont_type_2('example_1')">MonoSpace</button>
+                            
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="open_dropdown('myDropdown_3')" id="fourth_drop" class="dropbtn">Change line height ▼</button>
+                        <div id="myDropdown_3" class="dropdown-content">
+                            <button class="b" onclick="set_line_height_1('example_1')">1.5</button>
+                            <button class="b" onclick="set_line_height_2('example_1')">1.6</button>
+                            <button class="b" onclick="set_line_height_3('example_1')">1.7</button>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="open_dropdown('myDropdown_letter')" id="fifth" class="dropbtn">Change letter spacing ▼</button>
+                        <div id="myDropdown_letter" class="dropdown-content">
+                            <button class="b" onclick="set_letter_spacing_1('example_1')">-0.5</button>
+                            <button class="b" onclick="set_letter_spacing_2('example_1')">-1</button>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="open_dropdown('myDropdown_words')" id="six" class="dropbtn">Change word spacing ▼</button>
+                        <div id="myDropdown_words" class="dropdown-content">
+                            <button class="b" onclick="set_word_spacing_1('example_1')">-1.3px</button>
+                            <button class="b" onclick="set_word_spacing_2('example_1')">8px</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class=" j" onclick="Change_justify('example_1')">Not justify text</button>
+                        <button class=" j" onClick="window.location.reload();">Delete all changements</button>
+                        <button class="j r" id="tool_but_1" onClick="handleRivers(1);">Highlights rivers</button>
+                    </div>
+                </div>
+                <h1>Arial, Helvetica, sans-serif - German - text justify</h1>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <p style="font-family: Arial, Helvetica, sans-serif; width: 260px; text-align: justify; margin: auto;" id="example_1">Lorem Ipsum ist einfach nur Blindtext der Druck- und Satzindustrie. Lorem Ipsum ist seit dem 16. Jahrhundert der Standard-Dummy-Text der Branche, als ein unbekannter Drucker eine Galeere mit Schriften nahm und sie zu einem Musterbuch zusammenstellte. Sie hat nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Schriftsatz im Wesentlichen unverändert überstanden. Es wurde in den 1960er Jahren mit der Veröffentlichung von Letraset-Blättern mit Lorem Ipsum-Passagen und in jüngerer Zeit mit Desktop-Publishing-Software wie Aldus PageMaker, einschließlich Versionen von Lorem Ipsum, populär gemacht. Lorem Ipsum ist einfach nur Blindtext der Druck- und Satzindustrie. Lorem Ipsum ist seit dem 16. Jahrhundert der Standard-Dummy-Text der Branche, als ein unbekannter Drucker eine Galeere mit Schriften nahm und sie zu einem Musterbuch zusammenstellte. Sie hat nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Schriftsatz im Wesentlichen unverändert überstanden. Es wurde in den 1960er Jahren mit der Veröffentlichung von Letraset-Blättern mit Lorem Ipsum-Passagen und in jüngerer Zeit mit Desktop-Publishing-Software wie Aldus PageMaker, einschließlich Versionen von Lorem Ipsum, populär gemacht.
+                        </p>
+                    </div>
+                    <div class="grid-item" style="text-align: left;">
+                    <img  style="width: 260px;" src="esempi_rivers/tedesco_1.PNG" alt="river German">
+                    </div>
+                </div>
+           
+        </div>
+        <br>
+        <br>
+        <br>
+        <!---------------------------------------------secondo example-->
+        <div id="container_all">
+            <div class="commands">
+                <div class="dropdown">
+                        <button onclick="open_dropdown('myDropdown_4')" id="first_drop" class="dropbtn">Change the width ▼</button>
+                        <div id="myDropdown_4" class="dropdown-content">
+                            <button class="b" onclick="ChangeWidth_6('example_2')">321px</button>
+                            <button class="b" onclick="ChangeWidth_2('example_2')">600px</button>
+                            <button class="b" onclick="ChangeWidth_3('example_2')">100%</button>
+                        </div>
+                </div>
+
+                <div class="dropdown">
+                    <button onclick="open_dropdown('myDropdown_5')" id="second_drop" class="dropbtn">Change font size ▼</button>
+                    <div id="myDropdown_5" class="dropdown-content">
+                        <button class="b" onclick="ChangeFont_size_1('example_2')">11pt</button>
+                        <button class="b" onclick="ChangeFont_size_2('example_2')">14pt</button>
+                        <button class="b" onclick="ChangeFont_size_3('example_2')">16pt</button>
+                        
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button onclick="open_dropdown('myDropdown_6')" id="th_drop" class="dropbtn">Change font type ▼</button>
+                    <div id="myDropdown_6" class="dropdown-content">
+                        <button class="b" onclick="ChangeFont_type_1('example_2')">Times New Roman</button>
+                        <button class="b" onclick="ChangeFont_type_2('example_2')">MonoSpace</button>
+                        
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="open_dropdown('myDropdown_7')" id="fourth_drop" class="dropbtn">Change line height ▼</button>
+                    <div id="myDropdown_7" class="dropdown-content">
+                        <button class="b" onclick="set_line_height_1('example_2')">1.5</button>
+                        <button class="b" onclick="set_line_height_2('example_2')">1.6</button>
+                        <button class="b" onclick="set_line_height_3('example_2')">1.7</button>
+                        
+                        
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="open_dropdown('myDropdown_letter1')" id="fourth_drop" class="dropbtn">Change letter spacing ▼</button>
+                    <div id="myDropdown_letter1" class="dropdown-content">
+                        <button class="b" onclick="set_letter_spacing_1('example_2')">-0.5</button>
+                        <button class="b" onclick="set_letter_spacing_2('example_2')">-1</button>
+                        
+                        
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="open_dropdown('myDropdown_words1')" id="six" class="dropbtn">Change word spacing ▼</button>
+                    <div id="myDropdown_words1" class="dropdown-content">
+                        <button class="b" onclick="set_word_spacing_1('example_2')">-1.3px</button>
+                        <button class="b" onclick="set_word_spacing_2('example_2')">8px</button>
+                    </div>
+                </div>
+                <div>
+                    <button class="j" onclick="Change_justify('example_2')">Not justify text</button>
+                    <button class="j" onClick="window.location.reload();">Delete all changements</button>
+                    <button class="j r" id="tool_but_2" onClick="handleRivers(2);">Highlights rivers</button>
+                </div>
+            </div>
+            <h1>Arial, Helvetica, sans-serif - English</h1>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <p style="font-family: Arial, Helvetica, sans-serif; width:290px; text-align: justify; margin: auto;" id="example_2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="grid-item" style="text-align: left;">
+                <img  style="width:290px;" src="esempi_rivers/inglese_1.PNG" alt="river english">
+                </div>
+            </div>
+       
+    </div>
+    <br>
+    <br>
+    <br>
+    <!---------------------------------------------terzo example-->
+    <div id="container_all">
+        <div class="commands">
+            <div class="dropdown">
+                    <button onclick="open_dropdown('myDropdown_8')" id="first_drop" class="dropbtn">Change the width ▼</button>
+                    <div id="myDropdown_8" class="dropdown-content">
+                        <button class="b" onclick="ChangeWidth_4('example_3')">350px</button>
+                        <button class="b" onclick="ChangeWidth_2('example_3')">600px</button>
+                        <button class="b" onclick="ChangeWidth_3('example_3')">100%</button>
+                    </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_9')" id="second_drop" class="dropbtn">Change font size ▼</button>
+                <div id="myDropdown_9" class="dropdown-content">
+                    <button class="b" onclick="ChangeFont_size_1('example_3')">11pt</button>
+                    <button class="b" onclick="ChangeFont_size_2('example_3')">14pt</button>
+                    <button class="b" onclick="ChangeFont_size_3('example_3')">16pt</button>
+                    
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_10')" id="th_drop" class="dropbtn">Change font type ▼</button>
+                <div id="myDropdown_10" class="dropdown-content">
+                    <button class="b" onclick="ChangeFont_type_1('example_3')">Times New Roman</button>
+                    <button class="b" onclick="ChangeFont_type_2('example_3')">MonoSpace</button>
+                    
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_11')" id="fourth_drop" class="dropbtn">Change line height ▼</button>
+                <div id="myDropdown_11" class="dropdown-content">
+                    <button class="b" onclick="set_line_height_1('example_3')">1.5</button>
+                    <button class="b" onclick="set_line_height_2('example_3')">1.6</button>
+                    <button class="b" onclick="set_line_height_3('example_3')">1.7</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_letter2')" id="fourth_drop" class="dropbtn">Change letter spacing ▼</button>
+                <div id="myDropdown_letter2" class="dropdown-content">
+                    <button class="b" onclick="set_letter_spacing_1('example_3')">-0.5</button>
+                    <button class="b" onclick="set_letter_spacing_2('example_3')">-1</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_words2')" id="six" class="dropbtn">Change word spacing ▼</button>
+                <div id="myDropdown_words2" class="dropdown-content">
+                    <button class="b" onclick="set_word_spacing_1('example_3')">-1.3px</button>
+                    <button class="b" onclick="set_word_spacing_2('example_3')">8px</button>
+                </div>
+            </div>
+            <div>
+                <button class="j" onclick="Change_justify('example_3')">Not justify text</button>
+                <button class="j" onClick="window.location.reload();">Delete all changements</button>
+                <button class="j r" id="tool_but_3" onClick="handleRivers(3);">Highlights rivers</button>
+            </div>
+
+            </div>
+            <h1>Arial, Helvetica, sans-serif - Bulgarian</h1>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <p style="font-family: Arial, Helvetica, sans-serif; width: 315px; text-align: justify; margin: auto;" id="example_3">Lorem Ipsum е просто фалшив текст от печатарската и наборната индустрия. Lorem Ipsum е стандартният фиктивен текст в индустрията още от 1500-те години, когато неизвестен принтер взел камбуз от шрифт и го разбъркал, за да направи книга с образци. Той е оцелял не само пет века, но и скока към електронния набор, оставайки по същество непроменен. Той беше популяризиран през 60-те години на миналия век с пускането на Letraset листове, съдържащи пасажи на Lorem Ipsum, а напоследък и със софтуер за настолни публикации като Aldus PageMaker, включително версии на Lorem Ipsum. Lorem Ipsum е просто фалшив текст от печатарската и наборната индустрия. Lorem Ipsum е стандартният фиктивен текст в индустрията още от 1500-те години, когато неизвестен принтер взел камбуз от шрифт и го разбъркал, за да направи книга с образци. Той е оцелял не само пет века, но и скока към електронния набор, оставайки по същество непроменен. Той беше популяризиран през 60-те години на миналия век с пускането на Letraset листове, съдържащи пасажи на Lorem Ipsum, а напоследък и със софтуер за настолни публикации като Aldus PageMaker, включително версии на Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="grid-item" style="text-align: left;">
+                <img  style="width: 330px;" src="esempi_rivers/bulgaro_1.PNG" alt="river bulgarian">
+                </div>
+            </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <!---------------------------------------------quarto example-->
+    <div id="container_all">
+        <div class="commands">
+            <div class="dropdown">
+                    <button onclick="open_dropdown('myDropdown_12')" id="first_drop" class="dropbtn">Change the width ▼</button>
+                    <div id="myDropdown_12" class="dropdown-content">
+                        <button class="b" onclick="ChangeWidth_1('example_4')">320px</button>
+                        <button class="b" onclick="ChangeWidth_2('example_4')">600px</button>
+                        <button class="b" onclick="ChangeWidth_3('example_4')">100%</button>
+                    </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_13')" id="second_drop" class="dropbtn">Change font size ▼</button>
+                <div id="myDropdown_13" class="dropdown-content">
+                    <button class="b" onclick="ChangeFont_size_1('example_4')">11pt</button>
+                    <button class="b" onclick="ChangeFont_size_2('example_4')">14pt</button>
+                    <button class="b" onclick="ChangeFont_size_3('example_4')">16pt</button>
+                    
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_14')" id="th_drop" class="dropbtn">Change font type ▼</button>
+                <div id="myDropdown_14" class="dropdown-content">
+                    <button class="b" onclick="ChangeFont_type_1('example_4')">Times New Roman</button>
+                    <button class="b" onclick="ChangeFont_type_2('example_4')">MonoSpace</button>
+                    
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_15')" id="fourth_drop" class="dropbtn">Change line height ▼</button>
+                <div id="myDropdown_15" class="dropdown-content">
+                    <button class="b" onclick="set_line_height_1('example_4')">1.5</button>
+                    <button class="b" onclick="set_line_height_2('example_4')">1.6</button>
+                    <button class="b" onclick="set_line_height_3('example_4')">1.7</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_letter3')" id="fourth_drop" class="dropbtn">Change letter spacing ▼</button>
+                <div id="myDropdown_letter3" class="dropdown-content">
+                    <button class="b" onclick="set_letter_spacing_1('example_4')">-0.5</button>
+                    <button class="b" onclick="set_letter_spacing_2('example_4')">-1</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_words3')" id="six" class="dropbtn">Change word spacing ▼</button>
+                <div id="myDropdown_words3" class="dropdown-content">
+                    <button class="b" onclick="set_word_spacing_1('example_4')">-1.3px</button>
+                    <button class="b" onclick="set_word_spacing_2('example_4')">8px</button>
+                </div>
+            </div>
+            <div>
+                <button class="j" onclick="Change_justify('example_4')">Not justify text</button>
+                <button class="j" onClick="window.location.reload();">Delete all changements</button>
+                <button class="j r" id="tool_but_4" onClick="handleRivers(4);">Highlights rivers</button>
+            </div>
+
+        </div>
+        <h1>Arial, Helvetica, sans-serif - Dutch</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <p style="font-family: Arial, Helvetica, sans-serif; width: 255px; text-align: justify; margin: auto;" id="example_4">Lorem Ipsum is gewoon een proeftekst van de drukkerij- en zetindustrie. Lorem Ipsum is de standaard proeftekst in de branche sinds de 16e eeuw, toen een onbekende drukker een kombuis met letters nam en deze door elkaar husselde om een ​​letterboek te maken. Het heeft niet alleen vijf eeuwen overleefd, maar ook de sprong naar het elektronische zetwerk en is in wezen onveranderd gebleven. Het werd populair in de jaren 60 met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten. Lorem Ipsum is gewoon een proeftekst van de drukkerij- en zetindustrie. Lorem Ipsum is de standaard proeftekst in de branche sinds de 16e eeuw, toen een onbekende drukker een kombuis met letters nam en deze door elkaar husselde om een ​​letterboek te maken. Het heeft niet alleen vijf eeuwen overleefd, maar ook de sprong naar het elektronische zetwerk en is in wezen onveranderd gebleven. Het werd populair in de jaren 60 met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.
+                </p>
+            </div>
+            <div class="grid-item" style="text-align: left;">
+            <img  style="width: 255px;" src="esempi_rivers/olandese_1.PNG" alt="river dutch">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!---------------------------------------------quinto example-->
+     <div id="container_all">
+        <div class="commands">
+            <div class="dropdown">
+                    <button onclick="open_dropdown('myDropdown_16')" id="first_drop" class="dropbtn">Change the width ▼</button>
+                    <div id="myDropdown_16" class="dropdown-content">
+                        <button class="b" onclick="ChangeWidth_5('example_5')">400px</button>
+                        <button class="b" onclick="ChangeWidth_2('example_5')">600px</button>
+                        <button class="b" onclick="ChangeWidth_3('example_5')">100%</button>
+                    </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_17')" id="second_drop" class="dropbtn">Change font size ▼</button>
+                <div id="myDropdown_17" class="dropdown-content">
+                    <button class="b" onclick="ChangeFont_size_1('example_5')">11pt</button>
+                    <button class="b" onclick="ChangeFont_size_2('example_5')">14pt</button>
+                    <button class="b" onclick="ChangeFont_size_3('example_5')">16pt</button>
+                    
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_18')" id="th_drop" class="dropbtn">Change font type ▼</button>
+                <div id="myDropdown_18" class="dropdown-content">
+                    <button class="b" onclick="ChangeFont_type_1('example_5')">Times New Roman</button>
+                    <button class="b" onclick="ChangeFont_type_2('example_5')">MonoSpace</button>
+                    
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_19')" id="fourth_drop" class="dropbtn">Change line height ▼</button>
+                <div id="myDropdown_19" class="dropdown-content">
+                    <button class="b" onclick="set_line_height_1('example_5')">1.5</button>
+                    <button class="b" onclick="set_line_height_2('example_5')">1.6</button>
+                    <button class="b" onclick="set_line_height_3('example_5')">1.7</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_letter4')" id="fourth_drop" class="dropbtn">Change letter spacing ▼</button>
+                <div id="myDropdown_letter4" class="dropdown-content">
+                    <button class="b" onclick="set_letter_spacing_1('example_5')">-0.5</button>
+                    <button class="b" onclick="set_letter_spacing_2('example_5')">-1</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_words4')" id="six" class="dropbtn">Change word spacing ▼</button>
+                <div id="myDropdown_words4" class="dropdown-content">
+                    <button class="b" onclick="set_word_spacing_1('example_5')">-1.3px</button>
+                    <button class="b" onclick="set_word_spacing_2('example_5')">8px</button>
+                </div>
+            </div>
+            <div>
+                <button class="j" onclick="Change_justify('example_5')">Not justify text</button>
+                <button class="j" onClick="window.location.reload();">Delete all changements</button>
+                <button class="j r" id="tool_but_5" onClick="handleRivers(5);">Highlights rivers</button>
+            </div>
+
+        </div>
+        <h1>Arial, Helvetica, sans-serif - Hungarian </h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <p style="font-family: Arial, Helvetica, sans-serif; width: 290px; text-align: justify; margin: auto;" id="example_5">A Lorem Ipsum egyszerűen álszöveg a nyomda- és szedőiparban. A Lorem Ipsum az 1500-as évek óta az iparág szabványos álszövege volt, amikor is egy ismeretlen nyomdász vett egy gépkonyhát, és összekevert belőle egy típusminta-könyvet. Nemcsak öt évszázadot élt túl, hanem az elektronikus szedés felé való ugrást is, lényegében változatlan maradva. Az 1960-as években népszerűsítették a Lorem Ipsum szövegrészeket tartalmazó Letraset lapok kiadásával, és újabban az olyan asztali kiadói szoftverekkel, mint az Aldus PageMaker, beleértve a Lorem Ipsum verzióit is. A Lorem Ipsum egyszerűen álszöveg a nyomda- és szedőiparban. A Lorem Ipsum az 1500-as évek óta az iparág szabványos álszövege volt, amikor is egy ismeretlen nyomdász vett egy gépkonyhát, és összekevert belőle egy típusminta-könyvet. Nemcsak öt évszázadot élt túl, hanem az elektronikus szedés felé való ugrást is, lényegében változatlan maradva. Az 1960-as években népszerűsítették a Lorem Ipsum szövegrészeket tartalmazó Letraset lapok kiadásával, és újabban az olyan asztali kiadói szoftverekkel, mint az Aldus PageMaker, beleértve a Lorem Ipsum verzióit is.
+                </p>
+            </div>
+            <div class="grid-item" style="text-align: left;">
+            <img  style="width: 290px;" src="esempi_rivers/ugherese_1.PNG" alt="river hungarian">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+     <!---------------------------------------------sesto example-->
+     <div id="container_all">
+        <div class="commands">
+            <div class="dropdown">
+                    <button onclick="open_dropdown('myDropdown_20')" id="first_drop" class="dropbtn">Change the width ▼</button>
+                    <div id="myDropdown_20" class="dropdown-content">
+                        <button class="b" onclick="ChangeWidth_7('example_6')">290px</button>
+                        <button class="b" onclick="ChangeWidth_2('example_6')">600px</button>
+                        <button class="b" onclick="ChangeWidth_3('example_6')">100%</button>
+                    </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_21')" id="second_drop" class="dropbtn">Change font size ▼</button>
+                <div id="myDropdown_21" class="dropdown-content">
+                    <button class="b" onclick="ChangeFont_size_1('example_6')">11pt</button>
+                    <button class="b" onclick="ChangeFont_size_2('example_6')">14pt</button>
+                    <button class="b" onclick="ChangeFont_size_3('example_6')">16pt</button>
+                    
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_22')" id="th_drop" class="dropbtn">Change font type ▼</button>
+                <div id="myDropdown_22" class="dropdown-content">
+                    <button class="b" onclick="ChangeFont_type_1('example_6')">Times New Roman</button>
+                    <button class="b" onclick="ChangeFont_type_2('example_6')">MonoSpace</button>
+                    
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_23')" id="fourth_drop" class="dropbtn">Change line height ▼</button>
+                <div id="myDropdown_23" class="dropdown-content">
+                    <button class="b" onclick="set_line_height_1('example_6')">1.5</button>
+                    <button class="b" onclick="set_line_height_2('example_6')">1.6</button>
+                    <button class="b" onclick="set_line_height_3('example_6')">1.7</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_letter5')" id="fourth_drop" class="dropbtn">Change letter spacing ▼</button>
+                <div id="myDropdown_letter5" class="dropdown-content">
+                    <button class="b" onclick="set_letter_spacing_1('example_6')">-0.5</button>
+                    <button class="b" onclick="set_letter_spacing_2('example_6')">-1</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_words5')" id="six" class="dropbtn">Change word spacing ▼</button>
+                <div id="myDropdown_words5" class="dropdown-content">
+                    <button class="b" onclick="set_word_spacing_1('example_6')">-1.3px</button>
+                    <button class="b" onclick="set_word_spacing_2('example_6')">8px</button>
+                </div>
+            </div>
+            <div>
+                <button class="j" onclick="Change_justify('example_6')">Not justify text</button>
+                <button class="j" onClick="window.location.reload();">Delete all changements</button>
+                <button class="j r" id="tool_but_6" onClick="handleRivers(6);">Highlights rivers</button>
+            </div>
+
+        </div>
+        <h1>Arial, Helvetica, sans-serif - Spain </h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <p style="font-family: Arial, Helvetica, sans-serif; width: 320px; text-align: justify; margin: auto;" id="example_6">Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde el año 1500, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográficas. Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios. Se popularizó en la década de 1960 con el lanzamiento de hojas de Letraset que contenían pasajes de Lorem Ipsum y, más recientemente, con software de autoedición como Aldus PageMaker que incluía versiones de Lorem Ipsum. Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde el año 1500, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográficas. Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios. Se popularizó en la década de 1960 con el lanzamiento de hojas de Letraset que contenían pasajes de Lorem Ipsum y, más recientemente, con software de autoedición como Aldus PageMaker que incluía versiones de Lorem Ipsum.
+                </p>
+            </div>
+            <div class="grid-item" style="text-align: left;">
+            <img  style="width: 320px;" src="esempi_rivers/spagnolo_1.PNG" alt="river spain">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+     <!---------------------------------------------settimo example-->
+     <div id="container_all">
+        <div class="commands">
+            <div class="dropdown">
+                    <button onclick="open_dropdown('myDropdown_24')" id="first_drop" class="dropbtn">Change the width ▼</button>
+                    <div id="myDropdown_24" class="dropdown-content">
+                        <button class="b" onclick="ChangeWidth_1('example_7')">320px</button>
+                        <button class="b" onclick="ChangeWidth_2('example_7')">600px</button>
+                        <button class="b" onclick="ChangeWidth_3('example_7')">100%</button>
+                    </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_25')" id="second_drop" class="dropbtn">Change font size ▼</button>
+                <div id="myDropdown_25" class="dropdown-content">
+                    <button class="b" onclick="ChangeFont_size_1('example_7')">11pt</button>
+                    <button class="b" onclick="ChangeFont_size_2('example_7')">14pt</button>
+                    <button class="b" onclick="ChangeFont_size_3('example_7')">16pt</button>
+                    
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_26')" id="th_drop" class="dropbtn">Change font type ▼</button>
+                <div id="myDropdown_26" class="dropdown-content">
+                    <button class="b" onclick="ChangeFont_type_1('example_7')">Times New Roman</button>
+                    <button class="b" onclick="ChangeFont_type_2('example_7')">MonoSpace</button>
+                    
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_27')" id="fourth_drop" class="dropbtn">Change line height ▼</button>
+                <div id="myDropdown_27" class="dropdown-content">
+                    <button class="b" onclick="set_line_height_1('example_7')">1.5</button>
+                    <button class="b" onclick="set_line_height_2('example_7')">1.6</button>
+                    <button class="b" onclick="set_line_height_3('example_7')">1.7</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_letter6')" id="fourth_drop" class="dropbtn">Change letter spacing ▼</button>
+                <div id="myDropdown_letter6" class="dropdown-content">
+                    <button class="b" onclick="set_letter_spacing_1('example_7')">-0.5</button>
+                    <button class="b" onclick="set_letter_spacing_2('example_7')">-1</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="open_dropdown('myDropdown_words6')" id="six" class="dropbtn">Change word spacing ▼</button>
+                <div id="myDropdown_words6" class="dropdown-content">
+                    <button class="b" onclick="set_word_spacing_1('example_7')">-1.3px</button>
+                    <button class="b" onclick="set_word_spacing_2('example_7')">8px</button>
+                </div>
+            </div>
+            <div class="others_b">
+                <button class="j" onclick="Change_justify('example_7')">Not justify text</button>
+                <button class="j" onClick="window.location.reload();">Delete all changements</button>
+                <button class="j r" id="tool_but_7" onClick="handleRivers(7);">Highlights rivers</button>
+            </div>
+
+        </div>
+        <h1>Arial, Helvetica, sans-serif - Italian </h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <p style="font-family: Arial, Helvetica, sans-serif; width: 290px; text-align: justify; margin: auto;" id="example_7">Lorem Ipsum è semplicemente un testo fittizio dell'industria della stampa e della composizione. Lorem Ipsum è stato il testo fittizio standard del settore sin dal 1500, quando uno stampatore sconosciuto prese una cambusa di caratteri e l'ha rimescolata per creare un libro campione di caratteri. È sopravvissuto non solo a cinque secoli, ma anche al salto nella composizione elettronica, rimanendo sostanzialmente invariato. È stato reso popolare negli anni '60 con il rilascio di fogli Letraset contenenti passaggi di Lorem Ipsum e, più recentemente, con software di desktop publishing come Aldus PageMaker, comprese le versioni di Lorem Ipsum. Lorem Ipsum è semplicemente un testo fittizio dell'industria della stampa e della composizione. Lorem Ipsum è stato il testo fittizio standard del settore sin dal 1500, quando uno stampatore sconosciuto prese una cambusa di caratteri e l'ha rimescolata per creare un libro campione di caratteri. È sopravvissuto non solo a cinque secoli, ma anche al salto nella composizione elettronica, rimanendo sostanzialmente invariato. È stato reso popolare negli anni '60 con il rilascio di fogli Letraset contenenti passaggi di Lorem Ipsum e, più recentemente, con software di desktop publishing come Aldus PageMaker, comprese le versioni di Lorem Ipsum.
+                </p>
+            </div>
+            <div class="grid-item" style="text-align: left;">
+            <img  style="width: 290px;" src="esempi_rivers/italiano_1.PNG" alt="river italian">
+            </div>
+        </div>
+    </div>
+
+        <script>
+            function ChangeWidth_1(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_width_1");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function ChangeWidth_2(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_width_2");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function ChangeWidth_3(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_width_3");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function ChangeWidth_4(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_width_4");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function ChangeWidth_5(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_width_5");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function ChangeWidth_6(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_width_6");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function ChangeWidth_7(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_width_7");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function ChangeFont_size_1(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_font_size_1");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function ChangeFont_size_2(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_font_size_2");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function ChangeFont_size_3(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_font_size_3");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function ChangeFont_type_1(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_font_type_1");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function ChangeFont_type_2(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("Change_font_type_2");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+
+            function Change_justify(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("not_justify");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function set_line_height_1(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("line_height_1");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function set_line_height_2(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("line_height_2");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function set_line_height_3(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("line_height_3");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function set_letter_spacing_1(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("letter_spacing_1");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function set_letter_spacing_2(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("letter_spacing_2");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+        
+            function set_word_spacing_1(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("word_spacing_1");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            function set_word_spacing_2(id) {
+               var element = document.getElementById(id);
+               element.classList.toggle("word_spacing_2");
+               resetSvg();
+               var index = id.split("_")[1];
+               document.getElementById("tool_but_"+index).click();
+            }
+
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function open_dropdown(id) {
+                document.getElementById(id).classList.toggle("show");
+            }
+
+        //trova indici(posizione) spazi nel testo
+        function findSpacesInsideString(string){
+            const indices = [];
+            for(var i=0; i<string.length;i++) {
+                if (string[i] === " ") indices.push(i);
+            }
+            return indices;
+        }
+
+        //crea range per ogni spazio e trova dove iniza e finisce, altezza, cordinate x e y
+        function findClientRectsFromSpaceIndexes(el, indexes, container_dimentions){
+            const ranges = {};
+            for (var i=0; i < indexes.length - 1; i++){
+                const index = indexes[i];
+                const r = document.createRange();
+                r.setStart(el, index);
+                r.setEnd(el, index + 1);
+                const cr = r.getClientRects();
+
+                // found new line
+                if (!ranges[cr[0].y]) ranges[cr[0].y] = [];
+                if (Math.abs(cr[0].x - (container_dimentions.x + container_dimentions.width)) > 10) ranges[cr[0].y].push(cr[0]);
+
+            }
+            return ranges;
+        }
+
+        //considera due spazi, se due cordinate x dei due spazi sono vicine, l'algoritmo gli considra come river (restituisce true o false). 
+        function checkIfRivers(a, b){
+            // remember to check width
+            return Math.abs(a.x - b.x) < 10;
+        }
+
+        var svg = undefined;
+
+        function findHeightOfEntireDocument(){
+            var body = document.body,
+                html = document.documentElement;
+            var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+            return document.documentElement.getBoundingClientRect().height
+        }
+
+        function findWidthOfEntireDocument(){
+            var body = document.body,
+                html = document.documentElement;
+            var width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
+            return document.documentElement.getBoundingClientRect().width
+        }
+
+        function resetSvg(){
+            if (document.getElementsByTagName("svg") && document.getElementsByTagName("svg")[0])
+            document.getElementsByTagName("svg")[0].innerHTML = "";
+        }
+
+        function draw_spaces(a){
+            if (!svg) {
+                svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                svg.setAttribute("width", findWidthOfEntireDocument());
+                svg.setAttribute("height", findHeightOfEntireDocument());
+                svg.setAttribute("style", 'position:absolute; top: 0; left:0; z-index: -1;');
+            }
+            const line = document.createElementNS('http://www.w3.org/2000/svg','line');
+
+            line.setAttribute("x1", (a.x + a.width/2).toFixed(2));
+            line.setAttribute("y1", (a.y).toFixed(2));
+            line.setAttribute("x2", (a.x + a.width/2).toFixed(2));
+            line.setAttribute("y2", (a.y + a.height).toFixed(2));
+
+            line.setAttribute("style", 'stroke:rgb(255,0,0);stroke-width:2');
+            svg.appendChild(line);
+            var element = document.getElementById("lines");
+            document.body.appendChild(svg);
+        }
+
+        //prende un oggetto che contine gli spazi, raggruppati per riga. c'è un indice che conta il numero di righe. 
+        //(mi fermo due righe prima per non uscire numero dal numero di righe).
+        //ciclo righe, considero prima riga con primo spazio poi altra riga successiva con altri spazi. Confronto primo elemento della prima riga con tutti gli spazi della riga successiva.
+        //Se questi sono un river allora devo capire se ho già visto il primo dei due, cerco dove si trova. 
+        function findRivers(client_rects){
+            const result = [];
+            let index = 0;
+            const keys  = Object.keys(client_rects);
+            while (index < keys.length - 2){
+                for (var i = 0; i < client_rects[keys[index]].length; i++){
+                    const space_a = client_rects[keys[index]][i];
+                    let found_space_inside_this_line = false;
+                    for (var j = 0; j < client_rects[keys[index + 1]].length && !found_space_inside_this_line; j++){
+                        const space_b = client_rects[keys[index + 1]][j];
+                        if (checkIfRivers(space_a, space_b)) {
+                            let found = false;
+                            for (var z = 0; z < result.length && !found ; z++){
+                                for (var t = 0; t < result[z].length; t++){
+                                    if (result[z][t].x == space_a.x && result[z][t].y == space_a.y){
+                                        found = true;
+                                        result[z].push(space_b);
+                                        break;
+                                    }
+                                }
+                            }
+                            if (!found) result.push([space_a, space_b]);
+                            found_space_inside_this_line = true;
+
+                        }
+                    }
+                }
+                index++;
+            }
+            //Result è un array che contiene tutti i rivers raggruppati in sequenza.
+            return result;
+        }
+
+        //Per eliminare i river composti da meno di tre spazi.
+        function filterRivers(rivers){
+            const result = [];
+            for (var i = 0; i < rivers.length; i++){
+                if (rivers[i].length > 4){
+                    for (var j = 0; j < rivers[i].length; j++){
+                        const single_river = rivers[i][j];
+                        // if (j !=0 && Math.abs(rivers[i][j-1].y - rivers[i][j].y) > 2)
+                        let control = false;
+                        for (var z = 0; z < rivers[i].length; z++){
+                            console.log(rivers[i][z].y)
+                            if ( (single_river.y != rivers[i][z].y && single_river.x != rivers[i][z].x)
+                                    &&
+                                (Math.abs(single_river.y - rivers[i][z].y) < 1 && Math.abs(single_river.x - rivers[i][z].x) < 1)
+                                ) {
+                                control = true;
+                                break;
+                            }
+                        }
+                        if (!control) draw_spaces(single_river);
+                    }
+                    result.push(rivers[i]);
+                } 
+            }
+            return result;
+        }
+
+
+		function handleRivers(n_par){
+            document.getElementById("loading").style = "background: #A7E2FD; display: block; width: 100vw; height: 100vh; position: fixed; top:0; left:0; display: flex;justify-content: center;";
+            const previuous_position = document.documentElement.scrollTop || document.body.scrollTop;
+            window.scrollTo(0,0);
+            setTimeout(()=>{
+                const paragraph = document.getElementsByTagName('p');
+                const space_indexes = findSpacesInsideString(paragraph[Number(n_par) - 1].innerHTML);
+                const client_rects = findClientRectsFromSpaceIndexes(paragraph[Number(n_par) - 1].childNodes[0], space_indexes, paragraph[Number(n_par) - 1].getClientRects()[0]);
+                const rivers = findRivers(client_rects)
+                const filtered_rivers = filterRivers(rivers);
+            }, 1000);
+            setTimeout(()=>{window.scrollTo(0,previuous_position);}, 1000);
+            setTimeout(()=>{ document.getElementById("loading").style = "display: none;";}, 1100);
+           
+
+        }
+        </script>
+       
+    </body>
+</html>
