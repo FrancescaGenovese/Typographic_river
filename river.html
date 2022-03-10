@@ -713,13 +713,16 @@
                 if (Math.abs(cr[0].x - (container_dimentions.x + container_dimentions.width)) > 10) ranges[cr[0].y].push(cr[0]);
 
             }
+            console.log(ranges)
             return ranges;
         }
 
         //considera due spazi, se due cordinate x dei due spazi sono vicine, l'algoritmo gli considra come river (restituisce true o false). 
         function checkIfRivers(a, b){
             // remember to check width
-            return Math.abs(a.x - b.x) < 10;
+            const a_real_pos_x = a.x + a.width/2;
+            const b_real_pos_x = b.x + b.width/2;
+            return Math.abs(a_real_pos_x - b_real_pos_x) < 10;
         }
 
         var svg = undefined;
@@ -743,7 +746,7 @@
             document.getElementsByTagName("svg")[0].innerHTML = "";
         }
 
-        function draw_spaces(a){
+        function draw_spaces(a, t="asd"){
             if (!svg) {
                 svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
                 svg.setAttribute("width", findWidthOfEntireDocument());
@@ -756,11 +759,24 @@
             line.setAttribute("y1", (a.y).toFixed(2));
             line.setAttribute("x2", (a.x + a.width/2).toFixed(2));
             line.setAttribute("y2", (a.y + a.height).toFixed(2));
-
             line.setAttribute("style", 'stroke:rgb(255,0,0);stroke-width:2');
+
+            const text = document.createElementNS('http://www.w3.org/2000/svg','text');
+            text.textContent = a.x.toFixed(2);
+            text.setAttribute("x", (a.x + a.width/2).toFixed(2));
+            text.setAttribute("y", (a.y).toFixed(2));
+
             svg.appendChild(line);
+            // svg.appendChild(text);
             var element = document.getElementById("lines");
             document.body.appendChild(svg);
+        }
+
+        function sortArrayAscending(l){
+            const l_sorted = l.sort(function(a, b){
+                return a - b;
+            });
+            return l_sorted;
         }
 
         //prende un oggetto che contine gli spazi, raggruppati per riga. c'è un indice che conta il numero di righe. 
@@ -771,12 +787,14 @@
             const result = [];
             let index = 0;
             const keys  = Object.keys(client_rects);
-            while (index < keys.length - 2){
-                for (var i = 0; i < client_rects[keys[index]].length; i++){
-                    const space_a = client_rects[keys[index]][i];
+            const keys_sorted = sortArrayAscending(keys);
+            while (index < keys_sorted.length - 2){
+                console.log(keys[index])
+                for (var i = 0; i < client_rects[keys_sorted[index]].length; i++){
+                    const space_a = client_rects[keys_sorted[index]][i];
                     let found_space_inside_this_line = false;
-                    for (var j = 0; j < client_rects[keys[index + 1]].length && !found_space_inside_this_line; j++){
-                        const space_b = client_rects[keys[index + 1]][j];
+                    for (var j = 0; j < client_rects[keys_sorted[index + 1]].length && !found_space_inside_this_line; j++){
+                        const space_b = client_rects[keys_sorted[index + 1]][j];
                         if (checkIfRivers(space_a, space_b)) {
                             let found = false;
                             for (var z = 0; z < result.length && !found ; z++){
@@ -805,12 +823,11 @@
             const result = [];
             for (var i = 0; i < rivers.length; i++){
                 if (rivers[i].length > 4){
+                    console.log("river"+i, rivers[i])
                     for (var j = 0; j < rivers[i].length; j++){
                         const single_river = rivers[i][j];
-                        // if (j !=0 && Math.abs(rivers[i][j-1].y - rivers[i][j].y) > 2)
                         let control = false;
                         for (var z = 0; z < rivers[i].length; z++){
-                            console.log(rivers[i][z].y)
                             if ( (single_river.y != rivers[i][z].y && single_river.x != rivers[i][z].x)
                                     &&
                                 (Math.abs(single_river.y - rivers[i][z].y) < 1 && Math.abs(single_river.x - rivers[i][z].x) < 1)
@@ -819,7 +836,7 @@
                                 break;
                             }
                         }
-                        if (!control) draw_spaces(single_river);
+                        if (!control) draw_spaces(single_river, i);
                     }
                     result.push(rivers[i]);
                 } 
