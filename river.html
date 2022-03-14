@@ -31,8 +31,7 @@
                     <div class="dropdown">
                         <button onclick="open_dropdown('myDropdown_2')" id="th_drop" class="dropbtn">Change font type ▼</button>
                         <div id="myDropdown_2" class="dropdown-content">
-                            <button class="b" onclick="ChangeFont_type_1('example_1')">Times New Roman</button>
-                            <button class="b" onclick="ChangeFont_type_3('example_1')">Arial, Helvetica, sans-serif</button>
+                            <button class="b" onclick="ChangeFont_type_1('example_1')">Times New Roman</button>    
                             <button class="b" onclick="ChangeFont_type_2('example_1')">MonoSpace</button>
                             
                         </div>
@@ -106,7 +105,6 @@
                     <button onclick="open_dropdown('myDropdown_6')" id="th_drop" class="dropbtn">Change font type ▼</button>
                     <div id="myDropdown_6" class="dropdown-content">
                         <button class="b" onclick="ChangeFont_type_1('example_2')">Times New Roman</button>
-                        <button class="b" onclick="ChangeFont_type_3('example_2')">Arial, Helvetica, sans-serif</button>
                         <button class="b" onclick="ChangeFont_type_2('example_2')">MonoSpace</button>
                         
                     </div>
@@ -185,7 +183,6 @@
                 <button onclick="open_dropdown('myDropdown_10')" id="th_drop" class="dropbtn">Change font type ▼</button>
                 <div id="myDropdown_10" class="dropdown-content">
                     <button class="b" onclick="ChangeFont_type_1('example_3')">Times New Roman</button>
-                    <button class="b" onclick="ChangeFont_type_3('example_3')">Arial, Helvetica, sans-serif</button>
                     <button class="b" onclick="ChangeFont_type_2('example_3')">MonoSpace</button>
                     
                 </div>
@@ -260,7 +257,6 @@
                 <button onclick="open_dropdown('myDropdown_14')" id="th_drop" class="dropbtn">Change font type ▼</button>
                 <div id="myDropdown_14" class="dropdown-content">
                     <button class="b" onclick="ChangeFont_type_1('example_4')">Times New Roman</button>
-                    <button class="b" onclick="ChangeFont_type_3('example_4')">Arial, Helvetica, sans-serif</button>
                     <button class="b" onclick="ChangeFont_type_2('example_4')">MonoSpace</button>
                     
                 </div>
@@ -334,7 +330,6 @@
                 <button onclick="open_dropdown('myDropdown_18')" id="th_drop" class="dropbtn">Change font type ▼</button>
                 <div id="myDropdown_18" class="dropdown-content">
                     <button class="b" onclick="ChangeFont_type_1('example_5')">Times New Roman</button>
-                    <button class="b" onclick="ChangeFont_type_3('example_5')">Arial, Helvetica, sans-serif</button>
                     <button class="b" onclick="ChangeFont_type_2('example_5')">MonoSpace</button>
                     
                 </div>
@@ -408,7 +403,6 @@
                 <button onclick="open_dropdown('myDropdown_22')" id="th_drop" class="dropbtn">Change font type ▼</button>
                 <div id="myDropdown_22" class="dropdown-content">
                     <button class="b" onclick="ChangeFont_type_1('example_6')">Times New Roman</button>
-                    <button class="b" onclick="ChangeFont_type_3('example_6')">Arial, Helvetica, sans-serif</button>
                     <button class="b" onclick="ChangeFont_type_2('example_6')">MonoSpace</button>
                     
                 </div>
@@ -482,7 +476,6 @@
                 <button onclick="open_dropdown('myDropdown_26')" id="th_drop" class="dropbtn">Change font type ▼</button>
                 <div id="myDropdown_26" class="dropdown-content">
                     <button class="b" onclick="ChangeFont_type_1('example_7')">Times New Roman</button>
-                    <button class="b" onclick="ChangeFont_type_3('example_7')">Arial, Helvetica, sans-serif</button>
                     <button class="b" onclick="ChangeFont_type_2('example_7')">MonoSpace</button>
                     
                 </div>
@@ -620,14 +613,6 @@
             function ChangeFont_type_2(id) {
                var element = document.getElementById(id);
                element.classList.toggle("Change_font_type_2");
-               resetSvg();
-               var index = id.split("_")[1];
-               document.getElementById("tool_but_"+index).click();
-            }
-
-            function ChangeFont_type_3(id) {
-               var element = document.getElementById(id);
-               element.classList.toggle("Change_font_type_3");
                resetSvg();
                var index = id.split("_")[1];
                document.getElementById("tool_but_"+index).click();
